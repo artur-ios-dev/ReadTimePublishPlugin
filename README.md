@@ -34,10 +34,7 @@ For more information on how to use the Swift Package Manager, check [its officia
 import ReadTimePublishPlugin
 ...
 static func contentHeader(for item: Item<OrdinaryCoding>, home: Bool = true) -> Node {
-    .div(.class("meta-data content-header"),
-        .span(.class("date"), "\(item.formattedDate)"),
-        .unwrap(item.readTime().time, { .span(.class("readTime"), "\($0) min\(home ? "" : " read")") })
-    )
+    .unwrap(item.readTime().time, { .span(.class("readTime"), "\($0) min\(home ? "" : " read")") })
 }
 ...
 ```
