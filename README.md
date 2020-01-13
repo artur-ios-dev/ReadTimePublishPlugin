@@ -33,8 +33,6 @@ For more information on how to use the Swift Package Manager, check [its officia
 ```swift
 import ReadTimePublishPlugin
 ...
-static func contentHeader(for item: Item<OrdinaryCoding>, home: Bool = true) -> Node {
-    .unwrap(item.readTime().time, { .span(.class("readTime"), "\($0) min\(home ? "" : " read")") })
-}
+.unwrap(item.readTime().time, { .span(.class("readTime"), "\($0) min\(home ? "" : " read")") })
 ...
 ```
