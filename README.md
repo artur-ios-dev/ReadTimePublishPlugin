@@ -33,6 +33,6 @@ For more information on how to use the Swift Package Manager, check [its officia
 ```swift
 import ReadTimePublishPlugin
 ...
-.unwrap(item.readTime().time, { .span(.class("readTime"), "\($0) min\(home ? "" : " read")") })
+.unwrap(item.readTime().time, { .span("\($0) min") })
 ...
 ```
