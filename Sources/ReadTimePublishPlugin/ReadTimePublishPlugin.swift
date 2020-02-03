@@ -40,8 +40,8 @@ private extension String {
         let timeInMinutes = Double(wordsCount) / Double(averageWordsPerMinute)
 
         switch type {
-        case .seconds: return Int((timeInMinutes * 60).rounded(.toNearestOrAwayFromZero))
-        case .minutes: return Int(timeInMinutes.rounded(.toNearestOrAwayFromZero))
+        case .seconds: return Int((timeInMinutes * 60).rounded(.awayFromZero))
+        case .minutes: return Int(timeInMinutes.rounded(.awayFromZero))
         }
     }
 }
