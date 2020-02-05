@@ -2,6 +2,8 @@
 
 A [Publish](https://github.com/johnsundell/publish) plugin that makes it easy to get a read time for your articles.
 
+[![Build Status](https://app.bitrise.io/app/bc6358842e4236d8/status.svg?token=k1-KrBo3XG1DDKqr96EBlw&branch=master)](https://app.bitrise.io/app/bc6358842e4236d8)
+
 ## Installation
 
 To install it into your [Publish](https://github.com/johnsundell/publish) package, add it as a dependency within your `Package.swift` manifest:
